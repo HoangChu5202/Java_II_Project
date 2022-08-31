@@ -1,6 +1,6 @@
 package java1refresher;
 
-public class Book {
+public class Book implements Comparable<Book>{
     private String title;
     private String author;
     private boolean read;
@@ -80,5 +80,14 @@ public class Book {
                 ", read=" + read +
                 ", numPages=" + numPages +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Book o) {
+        int result = this.title.compareTo(o.title) * -1;
+        if (result==0) {
+            result = (this.numPages - o.numPages) * -1;
+        }
+        return result;
     }
 }
