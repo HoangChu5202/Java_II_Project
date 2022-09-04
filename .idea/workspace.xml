@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/assignment/intro/VersionManager.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tests/assignment/intro/VersionTest.java" afterDir="false" />
@@ -11,12 +9,19 @@
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment/intro/Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment/intro/Version.java" afterDir="false" />
+=======
+    <list default="true" id="c6e86479-b2f7-45bd-93db-e3bcc558c783" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+>>>>>>> 131f20fc14ac874d444f85a909752c4dc72f5405
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -26,20 +31,20 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 131f20fc14ac874d444f85a909752c4dc72f5405
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2Dis2Z3xBRCPba06G6UBQhYlXT0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2EHRlpxfNUYbDxiCeu0sfYvxebW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
@@ -128,13 +133,24 @@
       </list>
     </recent_temporary>
   </component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+>>>>>>> 131f20fc14ac874d444f85a909752c4dc72f5405
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="" />
-      <created>1661193036317</created>
+      <changelist id="c6e86479-b2f7-45bd-93db-e3bcc558c783" name="Changes" comment="" />
+      <created>1662250678963</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1661193036317</updated>
       <workItem from="1661193041695" duration="1884000" />
       <workItem from="1661220319919" duration="1345000" />
@@ -144,6 +160,10 @@
       <workItem from="1661793886538" duration="5198000" />
       <workItem from="1661966660021" duration="6120000" />
       <workItem from="1662308897505" duration="601000" />
+=======
+      <updated>1662250678963</updated>
+      <workItem from="1662250681379" duration="88000" />
+>>>>>>> 131f20fc14ac874d444f85a909752c4dc72f5405
     </task>
     <servers />
   </component>
