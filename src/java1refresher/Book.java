@@ -2,7 +2,7 @@ package java1refresher;
 
 public class Book implements Comparable<Book>{
     private String title;
-    private String author;
+    private Person author;
     private boolean read;
     private int numPages;
     private static final String DEFAULT_TITLE = "Undefined";
@@ -10,13 +10,13 @@ public class Book implements Comparable<Book>{
 
     public Book() {
         title = DEFAULT_TITLE;
-        author = DEFAULT_TITLE;
+        author = new Person();
         read = false;
         numPages = 1;
         bookCount++;
     }
 
-    public Book(String title, String author, boolean read, int numPages) {
+    public Book(String title, Person author, boolean read, int numPages) {
         setTitle(title);
         setAuthor(author);
         setRead(read);
@@ -40,11 +40,11 @@ public class Book implements Comparable<Book>{
         }
     }
 
-    public String getAuthor() {
+    public Person getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Person author) {
         if (author.equals("")) {
             throw new IllegalArgumentException("The author name is required");
         } else {
