@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
 
-public class Person {
+public class Person implements Comparable<Person>{
     private String firstName;
     private String lastName;
     private int heightInInches;
@@ -17,7 +17,8 @@ public class Person {
     public static final int DEFAULT_HEIGHT = 0;
     public static final double DEFAULT_WEIGHT = 0;
     public static final LocalDateTime DEFAULT_DOB = LocalDateTime.now();
-    public static final LocalDateTime MIDNIGHT_TONIGHT = LocalDateTime.of(LocalDate.now(ZoneId.of("America/Chicago")), LocalTime.MIDNIGHT).plusDays(1);
+    public static final LocalDateTime MIDNIGHT_TONIGHT = LocalDateTime.of(
+            LocalDate.now(ZoneId.of("America/Chicago")), LocalTime.MIDNIGHT).plusDays(1);
 
     public Person() {
         this(DEFAULT_FIRST_NAME, DEFAULT_LAST_NAME);
@@ -44,6 +45,11 @@ public class Person {
     }
 
     public void setFirstName(String firstName) {
+        if (firstName.matches(".*\\d.*")) {
+            throw new IllegalArgumentException("Numbers are not allowed");
+        } else if (firstName.equals("")) {
+            throw new IllegalArgumentException("First Name is required");
+        }
         this.firstName = firstName;
     }
 
@@ -85,5 +91,14 @@ public class Person {
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        int result = this.lastName.compareTo(o.lastName);
+        if (result == 0) {
+            result = this.firstName.compareTo(o.firstName);
+        }
+        return result;
     }
 }

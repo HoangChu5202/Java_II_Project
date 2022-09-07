@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/java1refresher/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/assignment/intro/VersionManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/java1refresher/PersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Java_II.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java_II.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment/intro/AssignmentIntroMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment/intro/AssignmentIntroMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment/intro/Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment/intro/Version.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignment/intro/VersionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment/intro/VersionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java1refresher/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java1refresher/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/java1refresher/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/java1refresher/PersonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +61,7 @@
       <recent name="java1refresher" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AssignmentIntroMain">
+  <component name="RunManager" selected="JUnit.PersonTest.setFirstName">
     <configuration name="AssignmentIntroMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assignment.intro.AssignmentIntroMain" />
       <module name="Java_II" />
@@ -79,7 +75,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonTest.compareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
@@ -89,28 +85,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="java1refresher" />
       <option name="MAIN_CLASS_NAME" value="java1refresher.PersonTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest.getHeightInInches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_II" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java1refresher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java1refresher" />
-      <option name="MAIN_CLASS_NAME" value="java1refresher.PersonTest" />
-      <option name="METHOD_NAME" value="getHeightInInches" />
+      <option name="METHOD_NAME" value="compareTo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.setDateOfBirth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonTest.setFirstName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
@@ -120,7 +101,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="java1refresher" />
       <option name="MAIN_CLASS_NAME" value="java1refresher.PersonTest" />
-      <option name="METHOD_NAME" value="setDateOfBirth" />
+      <option name="METHOD_NAME" value="setFirstName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.setLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java_II" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java1refresher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java1refresher" />
+      <option name="MAIN_CLASS_NAME" value="java1refresher.PersonTest" />
+      <option name="METHOD_NAME" value="setLastName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonTest.setFirstName" />
+        <item itemvalue="JUnit.PersonTest.setLastName" />
         <item itemvalue="Application.AssignmentIntroMain" />
+        <item itemvalue="JUnit.PersonTest.compareTo" />
         <item itemvalue="JUnit.PersonTest.testToString" />
-        <item itemvalue="JUnit.PersonTest" />
-        <item itemvalue="JUnit.PersonTest.getHeightInInches" />
-        <item itemvalue="JUnit.PersonTest.setDateOfBirth" />
       </list>
     </recent_temporary>
   </component>

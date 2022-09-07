@@ -22,25 +22,29 @@ public class AssignmentIntroMain {
 //            System.out.println(e.getMessage());
 //        }
         try {
-            VersionManager versionManager;
-            versionManager = new VersionManager("1.2.3");
-            versionManager = versionManager.minor();
-
-            System.out.println(versionManager.toString());
-
-            versionManager = versionManager.minor();
-            System.out.println(versionManager.toString());
-
-            versionManager = versionManager.patch();
-            System.out.println(versionManager.toString());
-
-            versionManager = versionManager.rollBack();
-            System.out.println(versionManager.toString());
-
-            versionManager = versionManager.patch();
-            versionManager = versionManager.patch();
-            versionManager = versionManager.patch();
-            System.out.println(versionManager.toString());
+//            VersionManager versionManager;
+//            versionManager = new VersionManager("1.2.3");
+//            versionManager = versionManager.minor();
+//
+//            System.out.println(versionManager.toString());
+//
+//            versionManager = versionManager.minor();
+//            System.out.println(versionManager.toString());
+//
+//            versionManager = versionManager.patch();
+//            System.out.println(versionManager.toString());
+//
+//            versionManager = versionManager.rollBack();
+//            System.out.println(versionManager.toString());
+//
+//            versionManager = versionManager.patch();
+//            versionManager = versionManager.patch();
+//            versionManager = versionManager.patch();
+//            System.out.println(versionManager.toString());
+            System.out.println(new VersionManager().release());
+            System.out.println(new VersionManager("").release());
+            System.out.println(new VersionManager("1.2.3").release());
+            System.out.println(new VersionManager("1.2.3").major().major().release());
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

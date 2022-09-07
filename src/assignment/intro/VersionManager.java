@@ -34,7 +34,7 @@ public class VersionManager {
         return this;
     }
 
-    public VersionManager rollBack() {
+    public VersionManager rollback() {
         if (previousVersions.size() < 1) {
             throw new IllegalArgumentException("Cannot rollback!");
         } else {
@@ -44,8 +44,7 @@ public class VersionManager {
         return this;
     }
 
-    @Override
-    public String toString() {
-        return currentVersion.getMajor() + "." + currentVersion.getMinor() + "." + currentVersion.getPatch();
+    public String release() {
+        return currentVersion.toString();
     }
 }

@@ -74,7 +74,7 @@ public class Version {
         try {
             num = Integer.parseInt(s);
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Can not convert string to a number!");
+            throw new IllegalArgumentException("Error occured while parsing version!");
         }
         return num;
     }
