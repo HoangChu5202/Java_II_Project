@@ -127,17 +127,25 @@ public class Book implements Comparable<Book>{
     public String toString() {
         return "Book{" +
                 "title='" + title + '\'' +
-                ", author='" + author + '\'' +
+                ", author=" + author +
                 ", read=" + read +
                 ", numPages=" + numPages +
+                ", datePublished=" + datePublished +
+                ", unitPrice=" + unitPrice +
                 '}';
     }
 
     @Override
     public int compareTo(Book o) {
         int result = this.title.compareTo(o.title) * -1;
-        if (result==0) {
+        if (result == 0) {
             result = (this.numPages - o.numPages) * -1;
+        }
+        if (result == 0) {
+            result = (this.author.compareTo(o.author));
+        }
+        if (result == 0) {
+            result = (this.datePublished.compareTo(o.datePublished));
         }
         return result;
     }

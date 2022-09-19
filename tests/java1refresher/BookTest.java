@@ -109,4 +109,32 @@ class BookTest {
         Exception e = assertThrows(IllegalArgumentException.class, () -> book.setUnitPrice(-6.2));
         assertEquals("Price can not be negative", e.getMessage());
     }
+
+    @Test
+    void testToString() {
+        assertEquals("Book{" +
+                "title='" + Book.DEFAULT_TITLE + '\'' +
+                ", author=" + Person.DEFAULT_FIRST_NAME + " " + Person.DEFAULT_LAST_NAME +
+                ", read=" + false +
+                ", numPages=" + 1 +
+                ", datePublished=" + LocalDate.now() +
+                ", unitPrice=" + 1.00 +
+                '}', book.toString());
+    }
+
+    @Test
+    void testCompareTo() {
+        Person person1 = new Person("Amy", "Hauschildt");
+        Person person2 = new Person("Marc", "Hauschildt");
+        Person person3 = new Person("Jane", "Doe");
+        Book book1 = new Book("Java The Beginning Guide", person1, false, 100);
+        Book book2 = new Book("C# The Beginning Guide", person2, false, 100);
+        Book book5 = new Book("C# The Beginning Guide", person3, false, 100);
+        Book book3 = new Book("My SQL", person3, true, 200);
+        Book book4 = new Book("My SQL", person3, true, 200, LocalDate.of(2022, 8, 19), 13.657);
+
+        assertTrue(book1.compareTo(book2) < 0); // Java to C#
+        assertTrue(book3.compareTo(book4) > 0); // Today day to 8/19/2022
+        assertTrue(book2.compareTo(book5) > 0); // Marc Hauschildt to Jane Doe
+    }
 }
