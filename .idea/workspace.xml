@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1301/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1302/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1303/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1304/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1305/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1306/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/testing/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/java1refresher/BookTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java1refresher/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java1refresher/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +60,7 @@
       <recent name="assignment.intro" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookTest.setDatePublished">
+  <component name="RunManager" selected="JUnit.BookTest.setUnitPrice">
     <configuration name="BookTest.getDatePublished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java_II" />
       <extension name="coverage">
@@ -153,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookTest.setDatePublished" />
         <item itemvalue="JUnit.BookTest.setUnitPrice" />
+        <item itemvalue="JUnit.BookTest.setDatePublished" />
         <item itemvalue="JUnit.BookTest.getDatePublished" />
         <item itemvalue="JUnit.BookTest.setAuthor" />
         <item itemvalue="JUnit.BookTest.setTitle" />
@@ -179,7 +169,8 @@
       <workItem from="1662308897505" duration="601000" />
       <workItem from="1663176002514" duration="6993000" />
       <workItem from="1663554542935" duration="608000" />
-      <workItem from="1663600629918" duration="4810000" />
+      <workItem from="1663600629918" duration="4869000" />
+      <workItem from="1663607811697" duration="1097000" />
     </task>
     <servers />
   </component>

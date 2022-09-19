@@ -18,7 +18,7 @@ public class Book implements Comparable<Book>{
 
     public static final String DEFAULT_TITLE = "Undefined";
     private static final LocalDate DEFAULT_DATE_PUBLISHED = LocalDate.now();
-    private static final double DEFAULT_UNIT_PRICE = 1.0;
+    private static final double DEFAULT_UNIT_PRICE = 1.00;
     public static int bookCount = 0;
 
     public Book() {
@@ -119,7 +119,7 @@ public class Book implements Comparable<Book>{
         if (unitPrice < 0) {
             throw new IllegalArgumentException("Price can not be negative");
         } else {
-            this.unitPrice = unitPrice;
+            this.unitPrice = Math.round(unitPrice*100.0)/100.0;
         }
     }
 

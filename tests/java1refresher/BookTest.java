@@ -103,8 +103,8 @@ class BookTest {
     @Test
     void setUnitPrice() {
         //good test
-        book.setUnitPrice(12.3);
-        assertEquals(12.3, book.getUnitPrice());
+        book.setUnitPrice(99.99999);
+        assertEquals(100.00, book.getUnitPrice());
         //bad test
         Exception e = assertThrows(IllegalArgumentException.class, () -> book.setUnitPrice(-6.2));
         assertEquals("Price can not be negative", e.getMessage());
