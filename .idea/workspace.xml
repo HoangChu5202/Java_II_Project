@@ -4,7 +4,10 @@
     <list default="true" id="7345ff17-ac96-4237-b42f-4f936e138099" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/Java_II.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java_II.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment/intro/AssignmentIntroMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment/intro/AssignmentIntroMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1306/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1306/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java1refresher/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/java1refresher/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/java1refresher/BookTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2EHRlpxfNUYbDxiCeu0sfYvxebW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,8 +48,6 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Huy Hoang/Java_II/src/assignment/intro&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Huy Hoang/Java_II&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -59,17 +63,18 @@
       <recent name="C:\Users\Huy Hoang\Java_II" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="assignment.intro" />
       <recent name="java1refresher" />
+      <recent name="assignment.intro" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AssignmentIntroMain">
-    <configuration name="AssignmentIntroMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment.intro.AssignmentIntroMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+      <option name="MAIN_CLASS_NAME" value="en.codegym.task.pro.task13.task1306.Solution" />
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment.intro.*" />
+          <option name="PATTERN" value="en.codegym.task.pro.task13.task1306.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.compareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookTest.setUnitPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
@@ -86,14 +91,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="java1refresher" />
-      <option name="MAIN_CLASS_NAME" value="java1refresher.PersonTest" />
-      <option name="METHOD_NAME" value="compareTo" />
+      <option name="MAIN_CLASS_NAME" value="java1refresher.BookTest" />
+      <option name="METHOD_NAME" value="setUnitPrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.setFirstName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookTest.testCompareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
@@ -102,14 +107,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="java1refresher" />
-      <option name="MAIN_CLASS_NAME" value="java1refresher.PersonTest" />
-      <option name="METHOD_NAME" value="setFirstName" />
+      <option name="MAIN_CLASS_NAME" value="java1refresher.BookTest" />
+      <option name="METHOD_NAME" value="testCompareTo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.setLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
@@ -118,23 +123,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="java1refresher" />
-      <option name="MAIN_CLASS_NAME" value="java1refresher.PersonTest" />
-      <option name="METHOD_NAME" value="setLastName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_II" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java1refresher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java1refresher" />
-      <option name="MAIN_CLASS_NAME" value="java1refresher.PersonTest" />
+      <option name="MAIN_CLASS_NAME" value="java1refresher.BookTest" />
       <option name="METHOD_NAME" value="testToString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -143,37 +132,29 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AssignmentIntroMain" />
-        <item itemvalue="JUnit.PersonTest.setFirstName" />
-        <item itemvalue="JUnit.PersonTest.setLastName" />
-        <item itemvalue="JUnit.PersonTest.compareTo" />
-        <item itemvalue="JUnit.PersonTest.testToString" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="JUnit.BookTest.testCompareTo" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BookTest.testToString" />
+        <item itemvalue="JUnit.BookTest.setUnitPrice" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7345ff17-ac96-4237-b42f-4f936e138099" name="Changes" comment="" />
+      <changelist id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="" />
       <created>1662250678963</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1661193036317</updated>
-      <workItem from="1661193041695" duration="1884000" />
-      <workItem from="1661220319919" duration="1345000" />
       <workItem from="1661306041909" duration="1214000" />
-      <workItem from="1661361996215" duration="5184000" />
       <workItem from="1661392860264" duration="3916000" />
       <workItem from="1661793886538" duration="5198000" />
       <workItem from="1661966660021" duration="6120000" />
       <workItem from="1662308897505" duration="601000" />
-      <workItem from="1663628924363" duration="6392000" />
-      <workItem from="1663894697328" duration="60000" />
-      <workItem from="1663970975567" duration="598000" />
     </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

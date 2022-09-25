@@ -23,3 +23,54 @@ In this week we just review what we learned in Java I.
 - *Static method*: A type of method that can be called without instantiating an object from a class.
 - *Interface*: a class that only has abstract methods (methods that must be declared in a class that implements the interface). Interfaces do not have instance variables unless they are declared public, static, and final. 
 - *Abstraction*: The details of how an object works are hidden. In this example we are calling the static sort() method from the Arrays class.
+
+## Test Driven Development (TDD)
+
+**Test Driven Development**
+
+Test-Driven Development (TDD) (or Unit Testing) is a technique for building software by writing test methods that verify that your code correctly outputs the expected results given a variety of inputs.
+
+**Create Test Sources and Resources Root**
+
+You will need to put test classes in a separate "tests" folder, not in your "src" folder. This helps on large code bases to keep the number of files you have to look through to a minimum. To do this we configure a Test Sources Root for the project. The Test Sources Root is a folder that stores your test source code.
+
+**Assertion Methods**
+
+There are some assertion method you need to know:
+
+- `assertEquals(expected, actual)`: 	Test that two values are equal.
+- `assertEquals(expected, actual, delta)` - for double:  Test that two doubles are equal to within a positive delta.
+- `assertNotEquals(expected, actual)`:     Test that two values are not equal.
+- `assertTrue(condition)`:      Test that a condition is true.
+- `assertFalse(condition)`:     Test that a condition is false.
+- `assertNotNull(object)`:      Test that an object isn't null.
+- `assertNull(object)`:         Test that an object is null.  
+- `assertThrows(expectedType, executable)`:   Test that execution of a supplied statement throws an exception.
+- `assertAll(executables)`:     Asserts that all supplied statements do not throw exceptions. 
+
+**BeforeEach Methods**
+
+Tests often require a default instance of the class. The setUp method can be used to instantiate that object needed for each test. Example:
+
+```java
+private Person person;
+
+@BeforeEach
+void setUp() {
+    person = new Person();
+}
+```
+
+**Implement Comparable**
+
+You need to do this to make the class comparable:
+```java
+public class Person implements Comparable<Person> {
+
+//...
+
+@Override
+public int compareTo(Person o) {
+    return 0;
+}
+```
