@@ -78,15 +78,15 @@ class PersonTest {
                 person.toString());
     }
 
-    @Test
-    void compareTo() {
-        Person person2 = new Person("Amy", "Hauschildt");
-        Person person3 = new Person("Marc", "Hauschildt");
-        Person person4 = new Person("Jane", "Doe");
-        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
-        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
-        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
-        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
-        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
-    }
+//    @Test
+//    void compareTo() {
+//        Person person2 = new Person("Amy", "Hauschildt");
+//        Person person3 = new Person("Marc", "Hauschildt");
+//        Person person4 = new Person("Jane", "Doe");
+//        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
+//        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
+//        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
+//        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
+//        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
+//    }
 }

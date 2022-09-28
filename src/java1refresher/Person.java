@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
 
-public class Person implements Comparable<Person>{
+public class Person { //implements Comparable<Person>{
     private String firstName;
     private String lastName;
     private int heightInInches;
@@ -40,6 +40,14 @@ public class Person implements Comparable<Person>{
         this.dateOfBirth = dateOfBirth;
     }
 
+    public Person(String firstName) {
+        this.firstName = firstName;
+        this.lastName = DEFAULT_LAST_NAME;
+        heightInInches = DEFAULT_HEIGHT;
+        weightInPounds = DEFAULT_WEIGHT;
+        dateOfBirth = DEFAULT_DOB;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -47,7 +55,7 @@ public class Person implements Comparable<Person>{
     public void setFirstName(String firstName) {
         if (firstName.matches(".*\\d.*")) {
             throw new IllegalArgumentException("Numbers are not allowed");
-        } else if (firstName.equals("")) {
+        } else if (firstName==null) {
             throw new IllegalArgumentException("First Name is required");
         }
         this.firstName = firstName;
@@ -90,12 +98,12 @@ public class Person implements Comparable<Person>{
         return firstName + " " + lastName;
     }
 
-    @Override
-    public int compareTo(Person o) {
-        int result = this.lastName.compareTo(o.lastName);
-        if (result == 0) {
-            result = this.firstName.compareTo(o.firstName);
-        }
-        return result;
-    }
+//    @Override
+//    public int compareTo(Person o) {
+//        int result = this.lastName.compareTo(o.lastName);
+//        if (result == 0) {
+//            result = this.firstName.compareTo(o.firstName);
+//        }
+//        return result;
+//    }
 }
