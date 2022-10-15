@@ -1,6 +1,5 @@
 package en.codegym.task.pro.task13.task1302;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;

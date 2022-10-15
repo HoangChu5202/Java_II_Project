@@ -32,7 +32,7 @@ public class Solution {
             if(iterator.hasNext()) {
                 String str = iterator.next();
                 if(str.equals("Just")) {
-                    iterator.remove();
+                    iterator.remove();              
                 }
             }
         }

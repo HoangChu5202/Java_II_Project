@@ -71,7 +71,7 @@ public class Book implements Comparable<Book>{
     }
 
     public void setAuthor(Person author) {
-        if (author.equals("")) {
+        if (author.equals(null)) {
             throw new IllegalArgumentException("The author name is required");
         } else {
             this.author = author;

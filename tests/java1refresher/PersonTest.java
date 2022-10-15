@@ -84,8 +84,8 @@ class PersonTest {
         Person person3 = new Person("Marc", "Hauschildt");
         Person person4 = new Person("Jane", "Doe");
         assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
-        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
-        assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
+        assertTrue(person.compareTo(person3) < 0); // Doe to Hauschildt
+        assertTrue(person.compareTo(person4) < 0); // Doe to Hauschildt
         assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
         assertTrue(person.compareTo(person2) < 0); // Doe to Hauschildt
     }
