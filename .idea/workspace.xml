@@ -2,24 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assignment/intro/CodingBatAssignment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1309/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1310/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1311/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1313/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1313/StringsLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java1refresher/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java1refresher/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java1refresher/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java1refresher/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java1refresher/HashSetMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab/sep_28/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Assignment4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Banana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Gala.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Gen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/GenericsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/NumericFns.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Potato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Tropical.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/TwoGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/Vegetable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java1refresher/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java1refresher/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/java1refresher/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/java1refresher/BookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/java1refresher/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/java1refresher/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,7 @@
       <recent name="assignment.intro" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main3">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java_II" />
@@ -87,12 +87,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="en.codegym.task.pro.task13.task1311.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="en.codegym.task.pro.task13.task1311.Solution" />
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generics.Main2" />
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="en.codegym.task.pro.task13.task1311.*" />
+          <option name="PATTERN" value="generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generics.Main3" />
+      <module name="Java_II" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generics.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generics.Main" />
+      <module name="Java_II" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="generics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,45 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.setAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_II" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java1refresher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java1refresher" />
-      <option name="MAIN_CLASS_NAME" value="java1refresher.BookTest" />
-      <option name="METHOD_NAME" value="setAuthor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookTest.testCompareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_II" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java1refresher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java1refresher" />
-      <option name="MAIN_CLASS_NAME" value="java1refresher.BookTest" />
-      <option name="METHOD_NAME" value="testCompareTo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main3" />
+        <item itemvalue="Application.generics.Main" />
+        <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.lab.sep_28.Main" />
-        <item itemvalue="JUnit.BookTest.setAuthor" />
-        <item itemvalue="JUnit.BookTest.testCompareTo" />
-        <item itemvalue="Application.en.codegym.task.pro.task13.task1311.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +170,12 @@
       <workItem from="1663600629918" duration="4869000" />
       <workItem from="1663607811697" duration="7237000" />
       <workItem from="1663780691517" duration="4011000" />
-      <workItem from="1664385553928" duration="7172000" />
+      <workItem from="1664385553928" duration="7287000" />
+      <workItem from="1664820380915" duration="80000" />
+      <workItem from="1664996282228" duration="1015000" />
+      <workItem from="1665508537911" duration="60000" />
+      <workItem from="1665595297508" duration="6977000" />
+      <workItem from="1666016867911" duration="2251000" />
     </task>
     <servers />
   </component>

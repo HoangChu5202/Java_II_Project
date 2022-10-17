@@ -74,3 +74,167 @@ public int compareTo(Person o) {
     return 0;
 }
 ```
+
+## Collections
+
+**Containers and collections**
+
+Containers or collections are classes that let you store and process several objects at once. 
+Java has several dozen collections, each of which stores elements in its own specific way. Here are a few of them:
+- `List<E>`
+- `Set<E>`
+- `Queue<E>`
+- `Map<K,V>`
+
+**HashSet collection**
+
+The HashSet class is similar to the ArrayList class, except that in only allows unique elements.
+You can create a HashSet object using a statement like:
+```java
+Set<Type> name = new HashSet<Type>();
+```
+
+Where Type is the type of the elements we will store in the HashSet collection.
+There are only three things you can do with a set: 
+add elements to the set, remove elements from the set, 
+and check whether the set contains a specific element. That's it.
+
+**Iterator for a collection**
+
+Iterators were proposed as a solution to the problem above.
+An Iterator is a special object associated with a collection, 
+which helps traverse all the elements of the collection without repeating any.
+You can use the following code to get an iterator for any collection, 
+where name is the name of collection variable, Type is the type of the elements of the collection, 
+iterator() is one of the collection's methods, and it is the name of the iterator variable.
+```java
+Iterator<Type> it = name.iterator();
+```
+
+**HashMap class**
+
+The HashMap class is the most popular kind of Map collection. 
+On the one hand, it is very similar to HashSet and has all its methods. 
+On the other hand, it is like a list (ArrayList) that can use words (or anything else) as its indices.
+
+You can create a HashMap using a statement like this, where KeyType is the type of the keys in the stored pairs, and ValueType is the type of the values in the pairs stored in the HashMap collection.
+```java
+HashMap<KeyType, ValueType> name = new HashMap<KeyType, ValueType>();
+```
+
+The HashMap class has methods like this:
+```java
+void put(KeyType key, ValueType value)	//Adds the (key, value) pair to the collection
+ValueType get(KeyType key)	//Returns the value associated with a key.
+boolean containsKey(KeyType key)	//Checks whether a key exists in the collection
+boolean containsValue(ValueType value)	//Checks for the existence of a value in the collection
+ValueType remove(KeyType key)	//Removes an element from the collection
+void clear()	//Clears the collection, removing all the elements
+int size()	//Returns the number of key-value pairs in the collection
+Set<KeyType> keySet()	//Returns the set of keys in the collection
+Collection<ValueType> values()	//Returns a set containing the elements of the collection
+Set<Map.Entry<KeyType, ValueType>> entrySet()	//Returns a set (Set) of all pairs (Map.Entry) in the collection.
+```
+
+**Looping over key-value pairs**
+
+Two ways to loop through a map is:
+
+```java
+for(Map.Entry<String, Integer> pair: map.entrySet()) {
+   String key = pair.getKey();
+   Integer value = pair.getValue();
+   System.out.println(key + " --> " + value);
+}
+```
+Or:
+```java
+for(var pair: map.entrySet()) {
+   String key = pair.getKey();
+   Integer value = pair.getValue();
+   System.out.println(key + " --> " + value);
+}
+```
+
+**Printing Collection Objects**
+
+*Consumer* is a functional interface with a single abstract method called accept(), 
+which takes in a value of type T and returns void.
+
+- forEach Method:
+```java
+collection.forEach(System.out::println);
+```
+- Avoiding Loops:
+```java
+System.out.println(Arrays.toString(collection.toArray()));
+//Or:
+System.out.println(collection.stream().map(Object::toString).collect(Collectors.joining(", ")); //doesn't include the brackets
+```
+
+**Deep vs Shallow Copy**
+
+- Shallow Copy: This code makes a shallow copy of an ArrayList. 
+This means that when you call a mutator method on an object, 
+it will change the copy as well as the original copy it references. 
+You can also use the ArrayList's clone() method to create a shallow copy.
+```java
+List<Employee> employeesCopy = new ArrayList<>(employees);
+printCollection(employeesCopy);
+```
+- Deep Copy: When you make a change to the copy it will not change the original one.
+To do it you need to start by specifying that the class implements the Cloneable interface.
+```java
+public class Employee extends Person implements Comparable<Employee>, Cloneable
+```
+Then add a clone() method to the Person class like the one shown below:
+```java
+@Override
+protected Employee clone() {
+    try{
+        return (Employee) super.clone();
+    } catch(CloneNotSupportedException e){
+        throw new RuntimeException(e);
+    }
+}
+```
+Instantiate the copy ArrayList so that it is the same size as the original.
+```java
+List<Employee> employeesCopy = new ArrayList<>(employees.size());
+```
+Then call the iterator() method from the original ArrayList to obtain a Iterator object.
+```java
+Iterator<Employee> iterator = employees.iterator();
+```
+Call the iterator object's `hasNext()` method to run a while loop through each 
+the elements in the original list. Add each element one at a time to the new copy list.
+```java
+while(iterator.hasNext()){
+employeesCopy.add(iterator.next().clone());
+}
+printCollection(copy);
+```
+
+## Contributing to Open Source Projects
+
+In this chapter we practiced contributing to open source projects by participating in Hacktoberfest.
+
+**Vocabulary**
+- *Open source*: You can contribute to other developer's projects to make better, more reliable software.
+- *Maintainer*: A person that maintains an open source project.
+- *Contributor*: A person that contributes to another developer's open source project.
+- *Fork*: Make a copy of another developer's repository.
+- *Clone*: Make a local copy of a project to your local machine.
+- *Origin*: The name of the remote alias from your local machine to your forked copy of the project.
+- *Upstream*: The name of the remote alias of the original project.
+- *Version control*: Software that allows developers to save and track changes made to a project.
+- *Git*: A version control system used to manage developer projects.
+- *GitHub*: A cloud-based repository hosting service that allows developers to share code.
+- *Repository*: You can use repositories to store a variety of projects on GitHub repositories. You can use repositories to collaborate with others and track your work.
+- *Issue*: A section of a GitHub repository where you can keep track of tasks, enhancements, and bugs for your project that need to be corrected.
+- *Branch*: A parallel version of a repository. It is contained within the repository, but does not affect the primary or main branch allowing you to work freely without disrupting the "live" version.
+- *Pull request*: Pull requests give developers the ability to work together as a team and discuss changes. A contributor requests a change, adds a comment, and the owner can approve or deny the request.
+- *Merge conflict*: Something that happens when two developers make changes to the same file on GitHub.
+
+*Fork* creates a copy of the original repository on our GitHub account. 
+*Clone* creates a copy of the original repository on our local computer.
