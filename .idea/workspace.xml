@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7345ff17-ac96-4237-b42f-4f936e138099" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Java_II.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java_II.iml" afterDir="false" />
+    <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assignment/intro/CodingBatAssignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1309/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1310/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1311/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1313/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1313/StringsLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java1refresher/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java1refresher/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java1refresher/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java1refresher/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java1refresher/HashSetMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab/sep_28/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1306/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1306/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java1refresher/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java1refresher/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/java1refresher/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/java1refresher/BookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/java1refresher/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/java1refresher/PersonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,22 +71,28 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Huy Hoang\Java_II" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="java1refresher" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="java1refresher" />
       <recent name="assignment.intro" />
     </key>
   </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Java_II" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-      <option name="MAIN_CLASS_NAME" value="en.codegym.task.pro.task13.task1306.Solution" />
+    </configuration>
+    <configuration name="en.codegym.task.pro.task13.task1311.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="en.codegym.task.pro.task13.task1311.Solution" />
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="en.codegym.task.pro.task13.task1306.*" />
+          <option name="PATTERN" value="en.codegym.task.pro.task13.task1311.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,7 +100,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.setUnitPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="lab.sep_28.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab.sep_28.Main" />
+      <module name="Java_II" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab.sep_28.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookTest.setAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
@@ -92,7 +123,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="java1refresher" />
       <option name="MAIN_CLASS_NAME" value="java1refresher.BookTest" />
-      <option name="METHOD_NAME" value="setUnitPrice" />
+      <option name="METHOD_NAME" value="setAuthor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,29 +145,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java_II" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java1refresher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="java1refresher" />
-      <option name="MAIN_CLASS_NAME" value="java1refresher.BookTest" />
-      <option name="METHOD_NAME" value="testToString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="JUnit.BookTest.testCompareTo" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.BookTest.testToString" />
-        <item itemvalue="JUnit.BookTest.setUnitPrice" />
+        <item itemvalue="Application.lab.sep_28.Main" />
+        <item itemvalue="JUnit.BookTest.setAuthor" />
+        <item itemvalue="JUnit.BookTest.testCompareTo" />
+        <item itemvalue="Application.en.codegym.task.pro.task13.task1311.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +167,12 @@
       <workItem from="1661793886538" duration="5198000" />
       <workItem from="1661966660021" duration="6120000" />
       <workItem from="1662308897505" duration="601000" />
+      <workItem from="1663176002514" duration="6993000" />
+      <workItem from="1663554542935" duration="608000" />
+      <workItem from="1663600629918" duration="4869000" />
+      <workItem from="1663607811697" duration="7237000" />
+      <workItem from="1663780691517" duration="4011000" />
+      <workItem from="1664385553928" duration="7172000" />
     </task>
     <servers />
   </component>
@@ -167,5 +188,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

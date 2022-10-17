@@ -30,6 +30,16 @@ public class Book implements Comparable<Book>{
         unitPrice =DEFAULT_UNIT_PRICE;
     }
 
+    public Book(String title) {
+        this.title = title;
+        author = new Person();
+        read = false;
+        numPages = 1;
+        bookCount++;
+        datePublished = DEFAULT_DATE_PUBLISHED;
+        unitPrice =DEFAULT_UNIT_PRICE;
+    }
+
     public Book(String title, Person author, boolean read, int numPages) {
         setTitle(title);
         setAuthor(author);
@@ -71,7 +81,7 @@ public class Book implements Comparable<Book>{
     }
 
     public void setAuthor(Person author) {
-        if (author.equals(null)) {
+        if (author==null) {
             throw new IllegalArgumentException("The author name is required");
         } else {
             this.author = author;
@@ -124,14 +134,7 @@ public class Book implements Comparable<Book>{
 
     @Override
     public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", author=" + author +
-                ", read=" + read +
-                ", numPages=" + numPages +
-                ", datePublished=" + datePublished +
-                ", unitPrice=" + unitPrice +
-                '}';
+        return title + " by " + author;
     }
 
     @Override
@@ -140,9 +143,9 @@ public class Book implements Comparable<Book>{
         if (result == 0) {
             result = (this.numPages - o.numPages) * -1;
         }
-        if (result == 0) {
-            result = (this.author.compareTo(o.author));
-        }
+//        if (result == 0) {
+//            result = (this.author.compareTo(o.author));
+//        }
         if (result == 0) {
             result = (this.datePublished.compareTo(o.datePublished));
         }
