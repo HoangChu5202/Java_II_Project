@@ -3,7 +3,7 @@ package generics;
 import java.util.*;
 
 
-public class MyStack<T> {
+public class MyStack<T> implements PushPop<T>{
     private ArrayList<T> stack;
 
     // Creates an empty Stack
@@ -32,9 +32,26 @@ public class MyStack<T> {
         return stack.remove(stack.size() - 1);
     }
 
+    public void swap(T obj1, T obj2) {
+//        Set<T> newStack = new HashSet<>(stack);
+//        stack = new ArrayList<>(newStack);
+
+        int loc1 = stack.size() - search(obj1);
+        int loc2 = stack.size() - search(obj2);
+
+        if ((loc1 > stack.size() || loc1 < -1) || (loc2 > stack.size() || loc2 < -1)) {
+            throw new NoSuchElementException();
+        } else {
+            T temp = stack.get(loc1);
+            stack.set(loc1, stack.get(loc2));
+            stack.set(loc2, temp);
+        }
+    }
+
     // Pushes an item onto the top of this stack.
-    public void push(T obj) {
+    public T push(T obj) {
         stack.add(obj);
+        return obj;
     }
 
     // Returns the 1-based position where an object is on this stack.
