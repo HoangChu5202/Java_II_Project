@@ -238,3 +238,66 @@ In this chapter we practiced contributing to open source projects by participati
 
 *Fork* creates a copy of the original repository on our GitHub account. 
 *Clone* creates a copy of the original repository on our local computer.
+
+## Generics
+
+**Generics Summary**
+- Provide flexible type safety to your code
+- Move many common errors from run time to compile time
+- Provide cleaner, easier-to-write code
+- Are reusable and reliable
+- Reduce the need for casting with collections
+- Are used heavily in the Java Collections API
+
+**Generics**
+
+A Generic is a data type that can be passed to classes, interfaces, and methods. 
+In Java, this is done with diamond notation <>.
+
+`<T>` is a generic. 
+Between the two brackets we can declare one or more Type parameters. 
+Example: `<T, X, Y, Z>`. We can name our parameters whatever we want. 
+`<T>` is just what's typically used.
+It's exactly like how a method has parameters. 
+However, instead of passing in values, 
+we passing in data types
+
+Note that the `<>` brackets are required after both the data type and the constructor name. 
+You are required to declare the type argument for the data type. 
+You are allowed to omit the type argument on the constructor.
+Type erasure happens at compile time when using generics.
+
+**Type Parameters to Methods**
+
+In addition to classes, we can also add type parameters to methods. 
+The code below calls an add method inside the main method. 
+It takes in a fruit object, and a box object, 
+and prints out what type of item it is before adding items to a box.
+```java
+public static <T> void add(T item, Box<T> box) {
+        box.add(item);
+}
+```
+
+**Extending Type Parameters**
+
+One last thing to note about Type parameters is that by default, our T parameter extends the Object class.
+```java 
+class Box<T extends Object>
+```
+If you want to further limit the allowed type parameters, you can require it to extend of a certain object.
+```java 
+class Box<T extends Fruit>
+```
+Then we would need to alter the add method to include the updated type method.
+```java 
+public static <T extends Fruit> void add(T item, Box<T> box)
+```
+
+**Using Wildcard Arguments**
+
+The wildcard argument <?> represents an unknown type. 
+Here, NumericFns<?> matches any valid type of NumericFns object.
+```java
+NumericFns<?> ob
+```
