@@ -4,18 +4,13 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Book implements Comparable<Book>{
+    private int id;
     private String title;
     private Person author;
     private boolean read;
     private int numPages;
-
-
-
     private LocalDate datePublished;
-
     private double unitPrice;
-
-
     public static final String DEFAULT_TITLE = "Undefined";
     private static final LocalDate DEFAULT_DATE_PUBLISHED = LocalDate.now();
     private static final double DEFAULT_UNIT_PRICE = 1.00;
@@ -63,6 +58,14 @@ public class Book implements Comparable<Book>{
 
     public static int getBookCount() {
         return bookCount;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {

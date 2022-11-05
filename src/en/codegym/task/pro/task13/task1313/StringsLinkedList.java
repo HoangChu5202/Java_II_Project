@@ -53,7 +53,7 @@ public class StringsLinkedList {
 //        6) Assign the temporary node object to the new node's prev value.
         node.prev = ref;
 //        7) Assign the last node object to the new node's next value.
-//        node.next = last;
+        node.next = last;
     }
 
     public static class Node {

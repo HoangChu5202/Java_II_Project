@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="Assignment4">
-      <change afterPath="$PROJECT_DIR$/src/final_project/Language.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/MyDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/MyDAOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/MyDAO_CSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/UIUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/UserInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generics/Stuff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Java_II.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java_II.iml" afterDir="false" />
+    <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="Module 4 Reflection">
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_access/BookDAO_CSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_CSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_MySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_XML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/AddPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/DeletePerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/GetPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/MyDataHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/UpdatePerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/csv_file/book.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/csv_file/person.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_vi.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1313/StringsLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1313/StringsLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final_project/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final_project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final_project/MyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_access/MyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final_project/MyDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_access/MyDAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final_project/MyDAO_CSV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java1refresher/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java1refresher/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_fr.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +57,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
@@ -68,8 +78,14 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="final_project.data_access" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kamik\Java_II\myProject\src\main\resources\csv_file" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="java1refresher" />
@@ -79,13 +95,26 @@
       <recent name="assignment.intro" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.final_project.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Assignment4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generics.Assignment4" />
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="final_project.Main" />
+      <module name="Java_II" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="final_project.data_access.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,19 +148,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="final_project.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="final_project.Main" />
-      <module name="Java_II" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="final_project.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="generics.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generics.Main" />
       <module name="Java_II" />
@@ -147,7 +163,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.final_project.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Assignment4" />
         <item itemvalue="Application.Main3" />
         <item itemvalue="Application.generics.Main" />
@@ -185,7 +201,10 @@
       <workItem from="1666027603202" duration="6296000" />
       <workItem from="1666199807907" duration="6539000" />
       <workItem from="1666578470536" duration="626000" />
-      <workItem from="1666632169567" duration="4262000" />
+      <workItem from="1666632169567" duration="7004000" />
+      <workItem from="1666804714468" duration="7039000" />
+      <workItem from="1667404370189" duration="8738000" />
+      <workItem from="1667610878995" duration="3141000" />
     </task>
     <task id="LOCAL-00001" summary="Module 2+3 reflection">
       <created>1666019320669</created>
@@ -201,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666031870218</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Module 4 Reflection">
+      <created>1666636651770</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666636651770</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,9 +245,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Module 2+3 reflection" />
     <MESSAGE value="Assignment4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment4" />
+    <MESSAGE value="Module 4 Reflection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module 4 Reflection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,5 +1,6 @@
-package final_project;
+package final_project.data_access;
 
+import final_project.data_access.MyDAO;
 import java1refresher.Person;
 
 public class MyDAOFactory {
@@ -8,13 +9,13 @@ public class MyDAOFactory {
         MyDAO<Person> dao = null;
         switch (dao_source.toUpperCase()) {
             case "CSV":
-//                dao = new MyDAO_CSV();
+                dao = new PersonDAO_CSV();
                 break;
             case "XML":
-                // dao = new MyDAO_XML();
+                 dao = new PersonDAO_XML();
                 break;
             case "MYSQL":
-                // dao = new MyDAO_MySQL();
+                 dao = new PersonDAO_MySQL();
                 break;
         }
         return dao;

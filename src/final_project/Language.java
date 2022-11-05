@@ -17,13 +17,14 @@ public class Language {
         return messages;
     }
 
-    public void setMessages(Scanner scanner, ResourceBundle messages) {
+    public void setMessages(Scanner scanner) {
         int choice = 0;
         while (true) {
             String menuTitle = this.messages.getString("languages-available");
             String prompt = this.messages.getString("select-language");
             String[] menuOptions = {
-                    this.messages.getString("english"), this.messages.getString("french")
+                    this.messages.getString("english"), this.messages.getString("french"),
+                    this.messages.getString("vietnamese")
             };
             choice = UIUtility.showMenuOptions(menuTitle, prompt, menuOptions, scanner, this.messages);
             if(choice <= 0 || choice > menuOptions.length + 1) {
@@ -39,6 +40,10 @@ public class Language {
             }
             else if(choice == 2) {
                 this.messages = ResourceBundle.getBundle("messages", new Locale("fr", "FR"));
+                System.out.println("\n" + this.messages.getString("language-changed"));
+            }
+            else if(choice == 3) {
+                this.messages = ResourceBundle.getBundle("messages", new Locale("vi", "VI"));
                 System.out.println("\n" + this.messages.getString("language-changed"));
             }
         }
