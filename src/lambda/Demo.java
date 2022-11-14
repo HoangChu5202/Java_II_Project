@@ -1,6 +1,7 @@
 package lambda;
 
 import final_project.MyException;
+import final_project.UIUtility;
 import final_project.data_access.MyDAO;
 import final_project.data_access.MyDAOFactory;
 import java1refresher.Book;
@@ -81,5 +82,40 @@ public class Demo {
         Consumer<Book> bookTitle  = (b) -> System.out.println("\"" + b.getTitle() + "\", " + b.getAuthor().toString());
 
         bookTitle.accept(book);
+
+        Predicate<Integer> isEven = (num) -> num % 2 == 0;
+        int n = 4;
+        System.out.println(n + " is " + (isEven.test(n) ? "even" : "odd"));
+        // List<Integer> myNums = Arrays.asList(8, 1, 9, 6, 7); // immutable
+        List<Integer> myNums = new ArrayList<>(Arrays.asList(8, 1, 9, 2, 6, 7));
+        myNums.removeIf(isEven);
+        System.out.println(myNums);
+
+        Predicate<Integer> isPrime = MyNumberPredicate::isPrime;
+        System.out.println("\nPrime Numbers:");
+        for (int i = 2; i < 20; i++) {
+            if (isPrime.test(i)) {
+                System.out.println(i + " ");
+            }
+        }
+
+        Consumer<String> printName = UIUtility::showSectionTitle;
+        printName.accept("Hoang");
+
+        UnaryOperator<Integer> smallestFactor = (num) -> {
+            int result = 1;
+            num = Math.abs(num);
+            for(int i = 2; i <= num/i; i++) {
+                if((num % i) == 0) {
+                    result = i;
+                    break;
+                }
+            }
+            return result;
+        };
+
+
+        System.out.println(smallestFactor.apply(9));
+        System.out.println(smallestFactor.apply(17));
     }
 }

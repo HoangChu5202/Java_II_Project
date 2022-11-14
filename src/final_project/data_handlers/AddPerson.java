@@ -37,7 +37,7 @@ public class AddPerson implements MyDataHandler{
 
         for(;;) {
             try {
-                int userIn = UserInput.getInt(messages.getString("enter-height"), scanner, messages);
+                int userIn = UserInput.getIntInRange(messages.getString("enter-height"), 0, 200, scanner, messages);
                 person.setHeightInInches(userIn);
                 break;
             } catch (IllegalArgumentException e) {
@@ -47,7 +47,7 @@ public class AddPerson implements MyDataHandler{
 
         for(;;) {
             try {
-                double userIn = UserInput.getDouble(messages.getString("enter-weight"), scanner, messages);
+                double userIn = UserInput.getDoubleInRange(messages.getString("enter-weight"), 0, 500,scanner, messages);
                 person.setWeightInPounds(userIn);
                 break;
             } catch (IllegalArgumentException e) {

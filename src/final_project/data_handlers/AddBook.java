@@ -12,9 +12,9 @@ import java.time.LocalDateTime;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
-public class AddBook implements MyDataHandler{
+public class AddBook implements MyBookDataHandler{
     @Override
-    public void handleTask(MyDAO data_source, Scanner scanner, ResourceBundle messages) throws MyException {
+    public void handleTask(MyDAO book_data_source, MyDAO person_data_source, Scanner scanner, ResourceBundle messages) throws MyException {
         Book book = new Book();
         // title,author,read,numPages,datePublished,unitPrice
         // set title
@@ -35,6 +35,7 @@ public class AddBook implements MyDataHandler{
                 String userIn = UserInput.getString("Enter author's name", scanner);
                 Person author = new Person();
                 author.setFirstNameAndLastName(userIn);
+                person_data_source.add(author);
                 book.setAuthor(author);
                 break;
             } catch (IllegalArgumentException e) {
@@ -88,7 +89,7 @@ public class AddBook implements MyDataHandler{
             }
         }
 
-        data_source.add(book);
+        book_data_source.add(book);
         UIUtility.showSectionTitle("Book added");
     }
 }

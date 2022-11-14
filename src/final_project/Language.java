@@ -37,14 +37,17 @@ public class Language {
             else if(choice == 1) {
                 this.messages = ResourceBundle.getBundle("messages", Locale.getDefault());
                 System.out.println("\n" + this.messages.getString("language-changed"));
+                break;
             }
             else if(choice == 2) {
                 this.messages = ResourceBundle.getBundle("messages", new Locale("fr", "FR"));
                 System.out.println("\n" + this.messages.getString("language-changed"));
+                break;
             }
             else if(choice == 3) {
                 this.messages = ResourceBundle.getBundle("messages", new Locale("vi", "VI"));
                 System.out.println("\n" + this.messages.getString("language-changed"));
+                break;
             }
         }
     }

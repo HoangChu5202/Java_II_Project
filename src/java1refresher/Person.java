@@ -112,6 +112,10 @@ public class Person { //implements Comparable<Person>{
         }
     }
 
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
+
     public int getHeightInInches() {
         return heightInInches;
     }
@@ -124,13 +128,13 @@ public class Person { //implements Comparable<Person>{
     }
 
     public double getWeightInPounds() {
-        if(weightInPounds < 0) {
-            throw new IllegalArgumentException("Weight must be greater than 0");
-        }
         return weightInPounds;
     }
 
     public void setWeightInPounds(double weightInPounds) {
+        if(weightInPounds < 0) {
+            throw new IllegalArgumentException("Weight must be greater than 0");
+        }
         this.weightInPounds = weightInPounds;
     }
 

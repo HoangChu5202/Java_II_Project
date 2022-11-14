@@ -75,7 +75,7 @@ public class UpdatePerson implements MyDataHandler{
             try {
                 String userIn = UserInput.getString("New height" + keep, scanner);
                 if(userIn.equals("")) {
-
+                    break;
                 }
                 person.setHeightInInches(Integer.parseInt(userIn));
                 break;
@@ -88,7 +88,7 @@ public class UpdatePerson implements MyDataHandler{
         System.out.println("Weight: " + person.getWeightInPounds());
         for(;;) {
             try {
-                String userIn = UserInput.getString("New first name " + keep, scanner);
+                String userIn = UserInput.getString("New weight" + keep, scanner);
                 if (userIn.equals("")) {
                     break;
                 }

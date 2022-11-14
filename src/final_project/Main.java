@@ -79,7 +79,7 @@ public class Main {
                         new DeletePerson().handleTask(personDAO, scanner, messages);
                         break;
                     case 5:
-                        new AddBook().handleTask(bookDAO, scanner, messages);
+                        new AddBook().handleTask(bookDAO, personDAO, scanner, messages);
                         break;
                     case 6:
                         new GetBook().handleTask(bookDAO, scanner, messages);

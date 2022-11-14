@@ -4,6 +4,7 @@ import final_project.MyException;
 import final_project.UIUtility;
 import final_project.UserInput;
 import final_project.data_access.MyDAO;
+import final_project.data_access.MyDAOFactory;
 import java1refresher.Book;
 import java1refresher.Person;
 
@@ -60,13 +61,27 @@ public class UpdateBook implements MyBookDataHandler{
         System.out.println("Author name: " + book.getAuthor());
         for(;;) {
             try {
+                String[] possibleValues = {"yes", "no"};
+                Person oldAuthorName = book.getAuthor();
+                List<Person> listAuthor = person_data_source.get(oldAuthorName.getFullName());
                 String userIn = UserInput.getString("New author name " + keep, scanner);
                 if (userIn.equals("")) {
                     break;
                 }
+
                 Person author = new Person();
                 author.setFirstNameAndLastName(userIn);
                 book.setAuthor(author);
+                userIn = UserInput.validateString("Do you want to update author name in person table", possibleValues, scanner, messages);
+                if (userIn.equalsIgnoreCase("yes")) {
+                    if (listAuthor.size() > 0) {
+                        Person oldAuthor = listAuthor.get(0);
+                        person_data_source.set(oldAuthor.getId() - 1, author);
+                    } else {
+                        System.out.println("ERROR: Author name not found");
+                    }
+
+                }
                 break;
             } catch(IllegalArgumentException e) {
                 UIUtility.showErrorMessage(e.getMessage(), scanner, messages);
