@@ -62,25 +62,22 @@ public class UpdateBook implements MyBookDataHandler{
         for(;;) {
             try {
                 String[] possibleValues = {"yes", "no"};
-                Person oldAuthorName = book.getAuthor();
-                List<Person> listAuthor = person_data_source.get(oldAuthorName.getFullName());
+                Person oldAuthorBook = book.getAuthor();
+                List<Person> listAuthor = person_data_source.get(oldAuthorBook.getFullName());
                 String userIn = UserInput.getString("New author name " + keep, scanner);
                 if (userIn.equals("")) {
                     break;
                 }
-
                 Person author = new Person();
                 author.setFirstNameAndLastName(userIn);
                 book.setAuthor(author);
-                userIn = UserInput.validateString("Do you want to update author name in person table", possibleValues, scanner, messages);
-                if (userIn.equalsIgnoreCase("yes")) {
-                    if (listAuthor.size() > 0) {
+                if (listAuthor.size() > 0) {
+                    userIn = UserInput.validateString("Do you want to update author name in person table", possibleValues, scanner, messages);
+                    if (userIn.equalsIgnoreCase("yes")) {
                         Person oldAuthor = listAuthor.get(0);
+                        author.setId(oldAuthor.getId());
                         person_data_source.set(oldAuthor.getId() - 1, author);
-                    } else {
-                        System.out.println("ERROR: Author name not found");
                     }
-
                 }
                 break;
             } catch(IllegalArgumentException e) {

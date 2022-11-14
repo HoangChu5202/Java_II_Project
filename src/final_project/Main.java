@@ -88,7 +88,7 @@ public class Main {
                         new UpdateBook().handleTask(bookDAO, personDAO, scanner, messages);
                         break;
                     case 8:
-                        new DeleteBook().handleTask(bookDAO, scanner, messages);
+                        new DeleteBook().handleTask(bookDAO, personDAO, scanner, messages);
                         break;
                     case 9:
                         language.setMessages(scanner);

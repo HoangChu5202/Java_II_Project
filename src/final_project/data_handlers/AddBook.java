@@ -35,6 +35,8 @@ public class AddBook implements MyBookDataHandler{
                 String userIn = UserInput.getString("Enter author's name", scanner);
                 Person author = new Person();
                 author.setFirstNameAndLastName(userIn);
+                int id = person_data_source.getAll().size();
+                author.setId(id);
                 person_data_source.add(author);
                 book.setAuthor(author);
                 break;
