@@ -99,7 +99,17 @@ public class Person { //implements Comparable<Person>{
     }
 
     public void setFirstNameAndLastName(String name) {
-        
+        String[] names = name.split(" ");
+        if (names.length > 1) {
+            lastName = names[names.length - 1].strip();
+            String personFirstName = "";
+            for (int i = 0; i < names.length - 1; i++) {
+                personFirstName += names[i] + " ";
+            }
+            firstName = personFirstName.strip();
+        } else {
+            firstName = name;
+        }
     }
 
     public int getHeightInInches() {

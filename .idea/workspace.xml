@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="Module 4 Reflection">
-      <change afterPath="$PROJECT_DIR$/src/final_project/data_access/BookDAO_CSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_CSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_MySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_XML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/AddPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/DeletePerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/GetPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/MyDataHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/UpdatePerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/csv_file/book.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/csv_file/person.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_vi.properties" afterDir="false" />
+    <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="Assignment 5a finished">
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_access/MyBookDAOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/AddBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/DeleteBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/GetBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/MyBookDataHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_handlers/UpdateBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lambda/ContainsAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lambda/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lambda/MyAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1313/StringsLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/en/codegym/task/pro/task13/task1313/StringsLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/final_project/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/Language.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/final_project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/final_project/MyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_access/MyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/final_project/MyDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_access/MyDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/final_project/MyDAO_CSV.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java1refresher/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final_project/data_access/BookDAO_CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_access/BookDAO_CSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final_project/data_access/MyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_access/MyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_CSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_CSV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java1refresher/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java1refresher/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/csv_file/book.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csv_file/book.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/csv_file/person.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csv_file/person.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +30,8 @@
       <list>
         <option value="package-info" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -72,9 +66,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -109,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="final_project.Main" />
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lambda.Demo" />
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="final_project.data_access.*" />
+          <option name="PATTERN" value="lambda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generics.Main2" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="final_project.Main" />
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="generics.*" />
+          <option name="PATTERN" value="final_project.data_access.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,10 +158,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Demo" />
         <item itemvalue="Application.Assignment4" />
         <item itemvalue="Application.Main3" />
         <item itemvalue="Application.generics.Main" />
-        <item itemvalue="Application.Main2" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +198,10 @@
       <workItem from="1666632169567" duration="7004000" />
       <workItem from="1666804714468" duration="7039000" />
       <workItem from="1667404370189" duration="8738000" />
-      <workItem from="1667610878995" duration="3141000" />
+      <workItem from="1667610878995" duration="3947000" />
+      <workItem from="1667845440745" duration="6163000" />
+      <workItem from="1668018156455" duration="2704000" />
+      <workItem from="1668439951896" duration="8420000" />
     </task>
     <task id="LOCAL-00001" summary="Module 2+3 reflection">
       <created>1666019320669</created>
@@ -227,7 +224,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666636651770</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Assignment 5b finished">
+      <created>1667614213073</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667614213073</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Assignment 5a finished">
+      <created>1667614259116</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667614259116</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +260,9 @@
     <MESSAGE value="Module 2+3 reflection" />
     <MESSAGE value="Assignment4" />
     <MESSAGE value="Module 4 Reflection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Module 4 Reflection" />
+    <MESSAGE value="Assignment 5b finished" />
+    <MESSAGE value="Assignment 5a finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment 5a finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

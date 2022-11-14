@@ -16,11 +16,11 @@ public interface MyDAO<T> {
     // If the record cannot be found, the method will throw an Exception.
     T get(int id) throws MyException;
 
-    List<Person> get(String str) throws MyException;
+    List<T> get(String str) throws MyException;
 
-    List<Person> get(LocalDate date) throws MyException;
+    List<T> get(LocalDate date) throws MyException;
 
-    List<Person> getAll() throws MyException;
+    List<T> getAll() throws MyException;
 
     // UPDATE a record with the specified id with the specified object.
     // If the record cannot be found, the method will throw an Exception.

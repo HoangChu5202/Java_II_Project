@@ -114,7 +114,7 @@ public class PersonDAO_CSV implements MyDAO<Person> {
                 }
             }
         } catch(FileNotFoundException e){
-
+            System.out.println(e.getMessage());
         }
         return null;
     }
@@ -142,7 +142,7 @@ public class PersonDAO_CSV implements MyDAO<Person> {
                 }
             }
         } catch(FileNotFoundException e){
-
+            System.out.println(e.getMessage());
         }
         return result;
     }
@@ -167,7 +167,7 @@ public class PersonDAO_CSV implements MyDAO<Person> {
                 }
             }
         } catch(FileNotFoundException e){
-
+            System.out.println(e.getMessage());
         }
         return result;
     }

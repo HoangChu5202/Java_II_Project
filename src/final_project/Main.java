@@ -1,11 +1,10 @@
 package final_project;
 
+import final_project.data_access.MyBookDAOFactory;
 import final_project.data_access.MyDAO;
 import final_project.data_access.MyDAOFactory;
-import final_project.data_handlers.AddPerson;
-import final_project.data_handlers.DeletePerson;
-import final_project.data_handlers.GetPerson;
-import final_project.data_handlers.UpdatePerson;
+import final_project.data_handlers.*;
+import java1refresher.Book;
 import java1refresher.Person;
 
 import java.util.ResourceBundle;
@@ -15,6 +14,7 @@ public class Main {
     public static void main(String[] args) {
         String data_source = "csv";
         MyDAO<Person> personDAO = MyDAOFactory.getMyDAO(data_source);
+        MyDAO<Book> bookDAO = MyBookDAOFactory.getMyDAO(data_source);
         if(personDAO == null) {
             System.out.println("Person data object not found");
             return;
@@ -25,6 +25,18 @@ public class Main {
             System.out.println(e.getMessage());
             return;
         }
+
+        if(bookDAO == null) {
+            System.out.println("Book data object not found");
+            return;
+        }
+        try {
+            bookDAO.readInData();
+        } catch(MyException e) {
+            System.out.println(e.getMessage());
+            return;
+        }
+
         Language language = new Language();
         ResourceBundle messages = language.getMessages();
         Scanner scanner = new Scanner(System.in);
@@ -37,6 +49,10 @@ public class Main {
                     , messages.getString("get-person")
                     , messages.getString("update-person")
                     , messages.getString("delete-person")
+                    , "Add Book"
+                    , "Get Book"
+                    , "Update Book"
+                    , "Delete Book"
                     , messages.getString("change-language")
             };
             choice = UIUtility.showMenuOptions(menuTitle, prompt, menuOptions, scanner, messages);
@@ -63,6 +79,18 @@ public class Main {
                         new DeletePerson().handleTask(personDAO, scanner, messages);
                         break;
                     case 5:
+                        new AddBook().handleTask(bookDAO, scanner, messages);
+                        break;
+                    case 6:
+                        new GetBook().handleTask(bookDAO, scanner, messages);
+                        break;
+                    case 7:
+                        new UpdateBook().handleTask(bookDAO, personDAO, scanner, messages);
+                        break;
+                    case 8:
+                        new DeleteBook().handleTask(bookDAO, scanner, messages);
+                        break;
+                    case 9:
                         language.setMessages(scanner);
                         messages = language.getMessages();
                         break;
