@@ -37,17 +37,18 @@ public class DeleteBook implements MyBookDataHandler{
                 System.out.println("Book deleted");
                 Person author = book.getAuthor();
                 List<Person> listAuthor = person_data_source.get(author.getFullName());
-                System.out.println(listAuthor);
                 if (listAuthor.size() > 0) {
-                    String userIn = UserInput.validateString("Do you want to delete this author name in person table",
+                    String userIn = UserInput.validateString("Do you want to delete this author in person file",
                             possibleValues, scanner, messages);
                     if (userIn.equalsIgnoreCase("yes")) {
                         Person person = listAuthor.get(0);
+                        System.out.println(person);
                         if (person_data_source.remove(person)) {
                             System.out.println("Author deleted");
                         } else {
                             System.out.println("Delete author failed");
                         }
+                        break;
                     }
                 }
             } else {
