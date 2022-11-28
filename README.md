@@ -301,3 +301,116 @@ Here, NumericFns<?> matches any valid type of NumericFns object.
 ```java
 NumericFns<?> ob
 ```
+
+## Lambda Expressions
+
+**Functional Interfaces**
+
+A functional interface is an interface with exactly one abstract method. The abstract method typically specifies the intended purpose, or single action, of the interface.
+
+**Lambda Expressions**
+
+The name "Lambda Expression" comes from a technique for defining mathematical functions in Lambda calculus.  The primary variable in these functions was the Greek letter lambda: λ.
+
+Lambda expression do the same things as other methods, but are a way of making a quick use method definition. 
+Lambda expressions cannot be executed on their own. 
+Instead, they are used to implement a method defined by a functional interface. 
+They provide a more declarative style of coding known as functional programming.
+
+Lambda Expressions start with an argument list, is followed by the arrow token, and then in the body, you provide the statement that you want to return. 
+The data types of the arguments and the return type are inferred from the interface that it comes from. 
+A lambda expression can be assigned only to a functional interface reference. 
+```java
+MyAnalyzer<String> contains = (search, target) -> target.contains(search);
+```
+
+**Supplier Interface**
+
+The Supplier functional interface is a generic interface that has one abstract method called `get()` that takes no arguments and returns an item of type T. 
+
+Example:
+```java
+Supplier<Integer> diceRoll = () -> ThreadLocalRandom.current().nextInt(1, 7);
+for(int i = 0; i < 20; i++) {
+  System.out.print(diceRoll.get() + " ");
+}
+```
+
+**Consumer Interface**
+
+The Consumer functional interface is a generic interface that has one abstract method called `accept()` that takes one argument of type T and returns void.
+
+```java
+Consumer<String> yellIt = str -> System.out.println(str.toUpperCase() + "!!!");
+yellIt.accept("give me pizza"); // GIVE ME PIZZA!
+```
+
+**BiConsumer Interface**
+
+The BiConsumer functional interface is a generic interface that has one abstract method called `accept()` that takes two arguments of type T and U and returns void. 
+
+```java
+BiConsumer<Integer, Integer> sum = (x, y) -> System.out.println(x + y);
+sum.accept(2, 3); // 5
+```
+
+**Predicate Interface**
+
+The Predicate functional interface is a generic interface that has one abstract method called `test()` that takes one argument of type T and returns a boolean. 
+These can be used in if statements, while loops, an ternary operators.
+
+```java
+Predicate<Integer> isEven = num -> num % 2 == 0;
+System.out.println("4" + " is " + (isEven.test(4) ?  "even" : "odd"));
+```
+
+**BiPredicate Interface**
+
+The BiPredicate functional interface is a generic interface that has one abstract method called `accept()` that takes two arguments of type T and returns void. 
+
+```java
+BiPredicate<String, String> lengthMatches = (s1, s2) -> s1.length() == s2.length();
+System.out.println(lengthMatches.test("Java", "Cool"));
+```
+
+**Method References**
+
+Method reference: A lambda expression mechanism for referring to a method name without executing the method.
+The notation is typically the name of a class (for static methods) or the name of an object (for instance methods), then two colons ::, and then the name of the method without parentheses.
+`ClassName::methodName`
+```java
+Supplier<Book> createNewBook = Book::new; // This one use constructor reference
+Book book = createNewBook.get();
+
+Predicate<String> match = String::isBlank; // This one use static methods
+```
+
+**Function Interface**
+
+The Function functional interface is a generic interface that has one abstract method called `apply()` that takes one argument of type T and returns a value of type R. 
+T and R can be the same type of object or different objects.
+```java
+Function<Integer, Boolean> isEven = num -> num % 2 == 0;
+System.out.println("4 is a" + (isEven.apply(4) ? " even" : " odd") + " number");
+```
+
+BiFunction Interface are the same with Function Interface, but it can take two arguments of type T and U, and returns a value of type R.
+
+**UnaryOperator Interface**
+
+The UnaryOperator functional interface is a generic interface that extends the Function Interface as previously discussed. 
+Therefore we can use the `apply()` abstract method. 
+The difference is that we specify a single object type T which will be used for both the input and the output.
+```java
+UnaryOperator<LocalDate> finalGradesDueBy = date -> date.plusDays(3);
+LocalDate lastDayOfFinals = LocalDate.parse("2022-12-13");
+System.out.println("My grades are due by " + finalGradesDueBy.apply(lastDayOfFinals));
+```
+
+The BinaryOperator functional interface is a generic interface that extends the BiFunction Interface as previously discussed. Therefore we can use the `apply()` abstract method. 
+The difference is that we specify a single object type T which will be used for two inputs and the output.
+
+```java
+BinaryOperator<Integer> max = (a, b) -> (a >= b) ? a : b;
+System.out.println(max.apply(2, 3));
+```

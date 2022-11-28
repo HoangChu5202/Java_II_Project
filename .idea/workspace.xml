@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="Assignment 5b Extra credit update">
+      <change afterPath="$PROJECT_DIR$/src/lambda/Assignment6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lambda/Widget.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/final_project/data_handlers/DeleteBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_handlers/DeleteBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +76,26 @@
       <recent name="assignment.intro" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Assignment6">
     <configuration name="Assignment4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generics.Assignment4" />
       <module name="Java_II" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Assignment6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lambda.Assignment6" />
+      <module name="Java_II" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambda.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,26 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="generics.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generics.Main" />
-      <module name="Java_II" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="generics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Assignment6" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.Assignment4" />
         <item itemvalue="Application.Main3" />
-        <item itemvalue="Application.generics.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +188,9 @@
       <workItem from="1667610878995" duration="3947000" />
       <workItem from="1667845440745" duration="6163000" />
       <workItem from="1668018156455" duration="2704000" />
-      <workItem from="1668439951896" duration="18103000" />
+      <workItem from="1668439951896" duration="18121000" />
+      <workItem from="1668622484225" duration="2416000" />
+      <workItem from="1669650037312" duration="4362000" />
     </task>
     <task id="LOCAL-00001" summary="Module 2+3 reflection">
       <created>1666019320669</created>
@@ -244,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668468707326</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Assignment 5b Extra credit update">
+      <created>1668536393505</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668536393505</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
