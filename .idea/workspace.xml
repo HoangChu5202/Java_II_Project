@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="Assignment 5b Extra credit update">
-      <change afterPath="$PROJECT_DIR$/src/lambda/Assignment6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lambda/Widget.java" afterDir="false" />
+    <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="Module 6 Reflection">
+      <change afterPath="$PROJECT_DIR$/src/final_project/data_access/BookDAO_MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Java_II.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java_II.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final_project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final_project/data_access/MyBookDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_access/MyBookDAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/csv_file/book.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csv_file/book.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/csv_file/person.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csv_file/person.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,14 +53,20 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kamik/Java_II/myProject/src/mariadb-java-client-3.1.0.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -76,7 +87,7 @@
       <recent name="assignment.intro" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Assignment6">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Assignment4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generics.Assignment4" />
       <module name="Java_II" />
@@ -144,8 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Assignment6" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Assignment6" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.Assignment4" />
         <item itemvalue="Application.Main3" />
@@ -190,7 +201,10 @@
       <workItem from="1668018156455" duration="2704000" />
       <workItem from="1668439951896" duration="18121000" />
       <workItem from="1668622484225" duration="2416000" />
-      <workItem from="1669650037312" duration="4362000" />
+      <workItem from="1669650037312" duration="4451000" />
+      <workItem from="1669663437055" duration="2952000" />
+      <workItem from="1669832559150" duration="6334000" />
+      <workItem from="1670265531852" duration="2942000" />
     </task>
     <task id="LOCAL-00001" summary="Module 2+3 reflection">
       <created>1666019320669</created>
@@ -255,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668536393505</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Module 6 Reflection">
+      <created>1669654513865</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669654513866</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +301,8 @@
     <MESSAGE value="Assignment 5a finished" />
     <MESSAGE value="Assignment 5b finished" />
     <MESSAGE value="Assignment 5b Extra credit update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment 5b Extra credit update" />
+    <MESSAGE value="Module 6 Reflection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module 6 Reflection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

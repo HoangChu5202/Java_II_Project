@@ -414,3 +414,33 @@ The difference is that we specify a single object type T which will be used for 
 BinaryOperator<Integer> max = (a, b) -> (a >= b) ? a : b;
 System.out.println(max.apply(2, 3));
 ```
+
+## GENERAL ETHICAL PRINCIPLES
+
+### 1.1 Contribute to society and to human well-being
+
+I promise
+
+### 1.2 Avoid harm
+
+I promise
+
+### 1.3 Be honest and trustworthy.
+
+I promise
+
+### 1.4 Be fair and take action not to discriminate.
+
+I promise
+
+### 1.5 Respect the work required to produce new ideas, inventions, creative works, and computing artifacts.
+
+I promise
+
+### 1.6 Respect privacy.
+
+I promise
+
+### 1.7 Honor confidentiality.
+
+I promise 

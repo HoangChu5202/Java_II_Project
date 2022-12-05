@@ -12,10 +12,10 @@ public class MyBookDAOFactory {
                 dao = new BookDAO_CSV();
                 break;
             case "XML":
-                //dao = new PersonDAO_XML();
+                //dao = new BookDAO_XML();
                 break;
             case "MYSQL":
-                //dao = new PersonDAO_MySQL();
+                dao = new BookDAO_MySQL();
                 break;
         }
         return dao;
