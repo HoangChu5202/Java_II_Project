@@ -419,28 +419,32 @@ System.out.println(max.apply(2, 3));
 
 ### 1.1 Contribute to society and to human well-being
 
-I promise
+I promise that the things I do as well as the things I create are meant to benefit the community and society. 
+As well as will not create anything that threatens health, safety, personal security and privacy.
 
 ### 1.2 Avoid harm
 
-I promise
+I promise that I will not create anything that can harm others. 
+As well as will try to minimize the possibility of indirect or unintentional harm to others.
 
 ### 1.3 Be honest and trustworthy.
 
-I promise
+I promise will always be honest in all circumstances. Nor will making false or misleading statements, 
+fabricating or falsifying data, giving or accepting bribes and other dishonest practices is a violation of the Code.
 
 ### 1.4 Be fair and take action not to discriminate.
 
-I promise
+I promise will always be fair and equal to all. Regardless of nationality, race, religion or creed, gender.
 
 ### 1.5 Respect the work required to produce new ideas, inventions, creative works, and computing artifacts.
 
-I promise
+I promise that I will respect the invention and creative rights of others. As well as will never steal other peoples creations.
 
 ### 1.6 Respect privacy.
 
-I promise
+I promise that I will respect the privacy of others' information. 
+I promise to only use personal information for lawful purposes and not to violate the rights of individuals and groups.
 
 ### 1.7 Honor confidentiality.
 
-I promise 
+I promise will always keep customer information and data confidential. As well as will never use them for any unauthorized activities.
