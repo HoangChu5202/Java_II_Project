@@ -71,6 +71,20 @@ public class UserInput {
         return value;
     }
 
+    public static double getDoubleInRange(String prompt, double lowBound, double highBound, Scanner in, ResourceBundle messages) {
+        double value = -1;
+        boolean needed = true;
+        while (needed) {
+            value = getDouble(prompt, in, messages);
+            if (value < lowBound || value > highBound) {
+                UIUtility.showErrorMessage( "Double not in range" + lowBound + " - " + highBound + ".", in, messages);
+            } else {
+                needed = false;
+            }
+        }
+        return value;
+    }
+
     /**
      * Prompts the user to enter a whole number. If the value is not a whole
      * number, prints the notIntMessage and tries again. Otherwise, returns the
