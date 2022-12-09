@@ -1,7 +1,6 @@
 package java1refresher;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class Book implements Comparable<Book>{
     private int id;

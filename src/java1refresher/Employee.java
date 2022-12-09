@@ -33,12 +33,12 @@ public class Employee extends Person implements Comparable<Employee>, Cloneable{
 
     @Override
     public int compareTo(Employee o) {
-        return (int) (this.salary - o.salary) * -1;
+        return (int)(this.salary - o.salary) * - 1;
     }
 
     public Employee clone() {
         try{
-            return (Employee) super.clone();
+            return (Employee)super.clone();
         } catch(CloneNotSupportedException e){
             throw new RuntimeException(e);
         }

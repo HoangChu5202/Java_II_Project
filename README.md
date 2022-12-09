@@ -419,96 +419,32 @@ System.out.println(max.apply(2, 3));
 
 ### 1.1 Contribute to society and to human well-being
 
-I promise
+I promise that the things I do as well as the things I create are meant to benefit the community and society. 
+As well as will not create anything that threatens health, safety, personal security and privacy.
 
 ### 1.2 Avoid harm
 
-I promise
+I promise that I will not create anything that can harm others. 
+As well as will try to minimize the possibility of indirect or unintentional harm to others.
 
 ### 1.3 Be honest and trustworthy.
 
-I promise
+I promise will always be honest in all circumstances. Nor will making false or misleading statements, 
+fabricating or falsifying data, giving or accepting bribes and other dishonest practices is a violation of the Code.
 
 ### 1.4 Be fair and take action not to discriminate.
 
-I promise
+I promise will always be fair and equal to all. Regardless of nationality, race, religion or creed, gender.
 
 ### 1.5 Respect the work required to produce new ideas, inventions, creative works, and computing artifacts.
 
-I promise
+I promise that I will respect the invention and creative rights of others. As well as will never steal other peoples creations.
 
 ### 1.6 Respect privacy.
 
-I promise
+I promise that I will respect the privacy of others' information. 
+I promise to only use personal information for lawful purposes and not to violate the rights of individuals and groups.
 
 ### 1.7 Honor confidentiality.
 
-I promise 
-
-The Iterable interface defines a forEach method. The required parameter is a(n):
-Consumer object
-
-Which of the following does not inherit from the Collection interface?
-Map
-
-Which of the following is true about Map data structures?
-Keys must be unique, values may be duplicates
-
-What is a correct way to create an instance of an ArrayList?
-List<String> cart = new ArrayList<>();
-
-What must replace the ???'s in order for the ArrayList to support the sort() method?
-Any class that implements the Comparable interface
-
-Which of the following uses First-In, First-Out (FIFO) data storage?
-Queue
-
-Select the code sample that will NOT print all elements in the groceryList.
-for(int i = 0; i < groceryList.size(); i++) {
-System.out.println(groceryList.get(i) + "=" + i);
-}
-
-The __ interface requires you to override the compare method and enables you to create numerous sorting options.
-Comparator
-
-Which of the following prohibits duplicate entries?
-Set
-
-Assume objects alpha and beta are both instances of class Example, which implements Comparable.  If alpha should appear after beta in a sorted list, what is returned by alpha.compareTo(beta)?
-A positive integer
-
-What is a correct way to create an instance of a HashMap?
-Map<String, Integer> cart = new HashMap<>();
-
-To make a copy of an ArrayList that is not a reference to the original, you need to specify that the class implements the __ interface.
-Cloneable
-Branch Test Notes
-To make a new branch, the git term is called _.
-Checkout
-
-A(n) __ is a separate parallel version of the main repository.
-(branch)
-
-What is the name of the remote alias of the original project?
-Upstream
-
-To get the lastest changes from your remote repository, the git command is?
-Pull
-
-What is the command to make your fork's main branch be in sync with the upstream repository.
-Merge
-
-When creating a public repository for an open source project, make sure to include a __ file, which may tell contributors that the maintainer assumes no liability.
-LICENSE
-
-How do you submit code to be reviewed for an open source project?
-By creating a pull request through the GitHub interface
-
-A(n) __ may occur when two developers make changes to the same file on GitHub.
-merge conflict
-
-What is the command to get all the change history from the remote repository without applying changes to your code.
-Fetch
-
-How do you create a copy of someone else's GitHub repository under your own GitHub account?
-By forking it via the GitHub interface.
+I promise will always keep customer information and data confidential. As well as will never use them for any unauthorized activities.
