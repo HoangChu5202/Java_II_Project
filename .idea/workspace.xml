@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="Module 6 Reflection">
-      <change afterPath="$PROJECT_DIR$/src/final_project/data_access/BookDAO_MySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Java_II.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java_II.iml" afterDir="false" />
+    <list default="true" id="34943b95-f74c-4915-a0f9-1f3ffdd49a32" name="Changes" comment="DAO_MySql">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/final_project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/final_project/data_access/MyBookDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_access/MyBookDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/final_project/data_access/PersonDAO_MySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/csv_file/book.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csv_file/book.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/csv_file/person.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csv_file/person.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +196,7 @@
       <workItem from="1669650037312" duration="4451000" />
       <workItem from="1669663437055" duration="2952000" />
       <workItem from="1669832559150" duration="6334000" />
-      <workItem from="1670265531852" duration="2942000" />
+      <workItem from="1670265531852" duration="3712000" />
     </task>
     <task id="LOCAL-00001" summary="Module 2+3 reflection">
       <created>1666019320669</created>
@@ -276,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669654513866</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="DAO_MySql">
+      <created>1670268651507</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670268651507</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +301,8 @@
     <MESSAGE value="Assignment 5b finished" />
     <MESSAGE value="Assignment 5b Extra credit update" />
     <MESSAGE value="Module 6 Reflection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Module 6 Reflection" />
+    <MESSAGE value="DAO_MySql" />
+    <option name="LAST_COMMIT_MESSAGE" value="DAO_MySql" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
