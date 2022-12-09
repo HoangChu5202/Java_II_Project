@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
         Map<Person, List<Animal>> owners_and_their_pets = new HashMap<>();
+        Map<Person, List<Animal>> owners_and_their_pets2 = new TreeMap<>();
 
         Person marc = new Person("Marc");
         List<Animal> marcs_pets = new ArrayList<>();
@@ -65,6 +66,9 @@ public class Main {
         processData(owners_and_their_pets);
         printReport();
 
+        processData2(owners_and_their_pets);
+        printReport2();
+
     }
 
     static Map<String, Integer> counter = new HashMap<>();
@@ -83,12 +87,32 @@ public class Main {
         }
     }
 
+    static Map<Integer, Integer> counter2 = new TreeMap<>();
+    public static void processData2(Map<Person, List<Animal>> map) {
+        // Part 2 code
+        map.forEach((key, list) -> {
+            if (counter2.containsKey(list.size())) {
+                counter2.put(list.size(), counter2.get(list.size()) + 1);
+            } else {
+                counter2.put(list.size(), 1);
+            }
+        });
+    }
+
 
     public static void printReport() {
         System.out.println("--- Animals Report ---");
         // Part 3 code
         counter.forEach((type, count) -> {
             System.out.println("Type: " + type + "\t\t" + "Count: " + count);
+        });
+    }
+
+    static Map<Integer, Integer> report = new TreeMap<>();
+    public static void printReport2() {
+        System.out.println("--- Animals Report ---");
+        counter2.forEach((type, count) -> {
+            System.out.println(count + " person has " + type + " animals");
         });
     }
 

@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String data_source = "mysql";
+        String data_source = "csv";
         MyDAO<Person> personDAO = MyDAOFactory.getMyDAO(data_source);
         MyDAO<Book> bookDAO = MyBookDAOFactory.getMyDAO(data_source);
         if(personDAO == null) {
